@@ -1,0 +1,300 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gitronix | Git & GitHub Workshop</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #10243a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f0b429;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0b429;
+        }
+
+        .hero {
+            min-height: 80vh;
+            background: linear-gradient(135deg, #10243a, #245b82);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #f0b429;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f0b429;
+            color: #10243a;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        section:not(.hero) {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #10243a;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            background: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .services {
+            text-align: center;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 12px #00000012;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .service-card h3 {
+            color: #245b82;
+            margin-bottom: 12px;
+        }
+
+        /* Meme section */
+        .meme-section {
+            background: #e9eef5;
+            text-align: center;
+        }
+
+        .meme-section p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .meme-image {
+            display: block;
+            width: 100%;
+            max-width: 750px;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px #00000020;
+        }
+
+        /* Workshop details */
+        .details {
+            background: white;
+            text-align: center;
+        }
+
+        .details p {
+            margin: 12px;
+            font-size: 18px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #10243a;
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        footer {
+            background: #091725;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">&lt;/&gt; Gitronix</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Learn</a>
+            <a href="#meme">Meme</a>
+            <a href="#details">Details</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to <span>Gitronix</span></h1>
+
+            <p>Git & GitHub Workshop</p>
+
+            <p>
+                Learn Git. Master GitHub. Build real-world projects.
+                Start your developer journey with us!
+            </p>
+
+            <a href="#services" class="btn">Explore Workshop</a>
+            <a href="#meme" class="btn">See Our Meme 😹</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Gitronix</h2>
+
+        <p>
+            Gitronix is a learning workshop designed for students,
+            beginners, and technology enthusiasts. Discover how Git
+            tracks code changes and how GitHub helps developers
+            collaborate, share projects, and build software together.
+            Learn by practising and develop skills for real-world
+            projects.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2 class="section-title">What You'll Learn</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>🌱 Git Basics</h3>
+                <p>
+                    Learn repositories, commits, branches, staging,
+                    and version control commands.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>🐙 GitHub Essentials</h3>
+                <p>
+                    Create repositories, upload code, push and pull
+                    changes, and work with pull requests.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>💻 Hands-on Projects</h3>
+                <p>
+                    Practise real development workflows and build
+                    confidence with Git and GitHub.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gitronix Meme -->
+    <section class="meme-section" id="m
